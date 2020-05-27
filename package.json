@@ -17,7 +17,32 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "plugins": [
+      "react-hooks"
+    ],
+    "rules": {
+      "semi": [
+        "error",
+        "always"
+      ],
+      "semi-spacing": [
+        "error",
+        {
+          "after": true,
+          "before": false
+        }
+      ],
+      "semi-style": [
+        "error",
+        "last"
+      ],
+      "no-extra-semi": "error",
+      "no-unexpected-multiline": "error",
+      "no-unreachable": "error",
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn"
+    }
   },
   "browserslist": {
     "production": [
@@ -30,5 +55,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-plugin-react-hooks": "^4.0.4"
   }
 }
