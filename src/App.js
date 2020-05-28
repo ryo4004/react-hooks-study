@@ -1,13 +1,13 @@
 import React from 'react';
 
-import UseState from './practice/useState';
-import UseReducer from './practice/useReducer';
-import UseReducerSimple from './practice/useReducerSimple';
-import UseReducerTodo from './practice/useReducerTodo';
-import UseCallback from './practice/useCallback';
-import UseCallbackEvent from './practice/useCallbackEvent';
-import UseMemo from './practice/useMemo';
-import NotUseMemo from './practice/notUseMemo';
+import UseState from './practice/useState/useState';
+import UseReducer from './practice/useReducer/useReducer';
+import UseReducerSimple from './practice/useReducer/useReducerSimple';
+import UseReducerTodo from './practice/useReducer/useReducerTodo';
+import UseCallback from './practice/useCallback/useCallback';
+import UseCallbackEvent from './practice/useCallback/useCallbackEvent';
+import UseMemo from './practice/useMemo/useMemo';
+import NotUseMemo from './practice/useMemo/notUseMemo';
 
 import './App.css';
 
@@ -17,27 +17,35 @@ const App = () => {
       <h1>React Hooks Study</h1>
       <hr />
       <h2>useState</h2>
+      <hr />
+      <h3>useState</h3>
       <UseState initialCount={0} />
       <hr />
       <h2>useReducer</h2>
+      <hr />
+      <h3>useReducer</h3>
       <UseReducer />
       <hr />
-      <h2>useReducerSimple</h2>
+      <h3>useReducerSimple</h3>
       <UseReducerSimple />
       <hr />
-      <h2>Todo with useReducer</h2>
+      <h3>Todo with useReducer</h3>
       <UseReducerTodo />
       <hr />
       <h2>useCallback</h2>
+      <hr />
+      <h3>useCallback</h3>
       <UseCallback />
       <hr />
-      <h2>useCallbackEvent</h2>
+      <h3>useCallbackEvent</h3>
       <UseCallbackEvent />
       <hr />
       <h2>useMemo</h2>
+      <hr />
+      <h3>useMemo</h3>
       <UseMemo />
       <hr />
-      <h2>not useMemo</h2>
+      <h3>not useMemo</h3>
       <NotUseMemo />
     </div>
   );

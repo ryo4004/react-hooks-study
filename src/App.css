@@ -2,6 +2,10 @@
   margin: 16px;
 }
 
+.app h2 {
+  margin-top: 48px;
+}
+
 .app button {
   margin: 8px;
 }
