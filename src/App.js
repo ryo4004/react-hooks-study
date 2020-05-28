@@ -4,6 +4,7 @@ import UseState from './practice/useState/useState';
 import UseReducer from './practice/useReducer/useReducer';
 import UseReducerSimple from './practice/useReducer/useReducerSimple';
 import UseReducerTodo from './practice/useReducer/useReducerTodo';
+import NotUseCallback from './practice/useCallback/notUseCallback';
 import UseCallback from './practice/useCallback/useCallback';
 import UseCallbackEvent from './practice/useCallback/useCallbackEvent';
 import UseMemo from './practice/useMemo/useMemo';
@@ -33,6 +34,9 @@ const App = () => {
       <UseReducerTodo />
       <hr />
       <h2>useCallback</h2>
+      <hr />
+      <h3>not useCallback</h3>
+      <NotUseCallback />
       <hr />
       <h3>useCallback</h3>
       <UseCallback />
