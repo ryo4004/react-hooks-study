@@ -46,11 +46,11 @@ const App = () => {
       <hr />
       <h2>useMemo</h2>
       <hr />
-      <h3>useMemo</h3>
-      <UseMemo />
-      <hr />
       <h3>not useMemo</h3>
       <NotUseMemo />
+      <hr />
+      <h3>useMemo</h3>
+      <UseMemo />
     </div>
   );
 };

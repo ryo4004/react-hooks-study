@@ -30,7 +30,13 @@ const reducer = (state, action) => {
         ...state,
         items: state.items.filter((v, index) => index !== action.id)
       };
+    case 'clear':
+      return {
+        ...state,
+        items: []
+      };
     default:
+      console.log('[useReducerTodo] no render');
       return state;
   }
 };
@@ -43,6 +49,8 @@ const Todo = () => {
     event.preventDefault();
     dispatch({type: 'add', value: input});
   };
+
+  console.log('[useReducerTodo] render');
 
   return (
     <>

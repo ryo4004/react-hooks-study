@@ -8,7 +8,7 @@ const Callback = () => {
     return arr && arr.length;
   }
 
-  const calculationFunction = useCallback((data) => calculation(data), []);
+  const calculationCallback = useCallback((data) => calculation(data), []);
 
   console.log('[useCallback] render');
 
@@ -18,7 +18,7 @@ const Callback = () => {
       <div>
         <button onClick={() => setCount(count + 1)}>+</button>
       </div>
-      <Child props={calculationFunction} parent={'useCallback'} />
+      <Child props={calculationCallback} parent={'useCallback'} />
     </div>
   );
 };

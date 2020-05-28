@@ -6,9 +6,11 @@ const Memo = () => {
   const data = 'sample';
 
   function calculation (arr) {
-    console.log('[notUseMemo] called calclation');
+    console.log('[notUseMemo] calclation');
     return arr.length;
   }
+
+  const calculated = calculation(data);
 
   console.log('[notUseMemo] render');
 
@@ -19,7 +21,7 @@ const Memo = () => {
         <button onClick={() => setCount(count + 1)}>+</button>
       </div>
       <div>
-        "{data}".length is: {calculation(data)}
+        "{data}".length is: {calculated}
       </div>
     </div>
   );
